@@ -1,0 +1,85 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: lavender;
+}
+
+html, body {
+    height: 100vh;
+    padding: 1rem;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        "portfolio map";
+    grid-template-columns: 1fr 1fr;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+.portfolio {
+    grid-area: portfolio;
+    display: flex;           /* makes children flex items */
+    flex-direction: column;  /* stacks children vertically */
+    justify-content: center; /* centers content vertically */
+    align-items: center;     /* centers content horizontally */
+}
+
+.portfolio img {
+    max-width: 400px;
+}
+
+#map {
+    grid-area: map;
+    height: 80vh;
+}
+
+#footer {
+    grid-area: footer;
+    background-color:lavenderblush;
+    padding: 1rem;
+    color: navy;
+    text-align: center;
+}
+
+.awesomePopup {
+    background-color: pink;
+    color: navy;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.awesomePopup2 {
+    background-color: lightblue;
+    color: navy;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.awesomePopup3 {
+    background-color: lightsalmon;
+    color: navy;
+    font-size: 16px;
+    padding: 10px;
+}
