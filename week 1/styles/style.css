@@ -6,7 +6,7 @@
 }
 
 html{
-    background-color: lavender;
+    background-color: rgb(183, 211, 183);
 }
 
 html, body {
@@ -47,19 +47,19 @@ main {
 }
 
 .portfolio img {
-    max-width: 400px;
+    max-width: 300px;
+    margin-bottom: 30px;
 }
 
 #map {
     grid-area: map;
-    height: 80vh;
+    height: 70vh;
 }
 
 #footer {
     grid-area: footer;
-    background-color:lavenderblush;
+    background-color:rgb(183, 211, 183);
     padding: 1rem;
-    color: navy;
     text-align: center;
 }
 
@@ -82,4 +82,51 @@ main {
     color: navy;
     font-size: 16px;
     padding: 10px;
+}
+
+.awesomePopup4 {
+    background-color:lavender;
+    color: navy;
+    font-size: 16px;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 {
+    color: darkslategrey;
+    padding: 20px;
+    text-align: right;
+}
+
+.portfolio p {
+    color:darkslategrey;
+    background-color:gainsboro;
+    padding: 10px;
+    width: 70vh;
+}
+
+.portfolio ol {
+    color:darkslategrey;
+    background-color: gainsboro;
+    width: 70vh;
+    padding: 30px;
+}
+
+.hobbies img {
+    max-width: 300px;
+    margin-top: 25px;
+}
+
+.hobbies h2 {
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.hobbies ul {
+    margin-left: 50px;
 }
