@@ -1,0 +1,134 @@
+* {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color:rosybrown;
+}
+
+html, body {
+    height: 80vh;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        "portfolio map";
+    grid-template-columns: 1fr 1fr;
+}
+
+header {
+    grid-area: header;
+    margin-bottom:20px;
+}
+
+main {
+    grid-area: main;
+}
+
+.portfolio {
+    grid-area: portfolio;
+    display: flex; /* This will make the items inside the portfolio flex items */
+    flex-direction: column; /* This can be row if you want the items to be side by side */
+    justify-content: center;
+    align-items: center;
+}
+
+#map {
+    grid-area: map;
+    height: 100vh;
+}
+
+#footer {
+    grid-area: footer;
+    padding: 1rem;
+    background-color:rosybrown; /* Sets a darker background for contrast */
+    color: black; /* Ensures text is readable against the dark background */
+    text-align: center; /* Centers the footer content */
+}
+
+#contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+h1{
+    font-family: monospace;
+    text-align:center;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-family:monospace;
+    text-align:center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#miffy img{
+    max-width:150px;
+    margin-top: 30px;
+}
+
+.portfolio ol{
+    background-color:antiquewhite;
+    color:darkgreen;
+    width:250px;
+    padding:30px;
+    width:307px;
+
+}
+
+.portfolio h3{
+    background-color:antiquewhite;
+    color:darkgreen;
+    padding:30px;
+}
+
+button{
+    color:white;
+    background-color:darkolivegreen;
+    font-size: 1rem;
+}
+
+button:hover{
+    background-color:darkseagreen;
+}
+
+button:active{
+    color:goldenrod;
+}
+
+.poppy{
+    color:darkgreen;
+    background-color:linen;
+    padding:8px;
+}
+
+.poppy h2{
+    color:lightcoral;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+
+.poppy img{
+    max-width:125px;
+    margin-top:15px;
+    max-height:120px;
+}
