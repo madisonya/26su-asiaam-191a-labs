@@ -1,0 +1,69 @@
+* {
+    font-family:monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color:#4677a0;
+}
+
+html, body {
+    height: 80vh;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        "portfolio map";
+    grid-template-columns: 1fr 1fr;
+    grid-area: main;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom:2.5rem;
+    color: black;
+}
+
+.portfolio {
+    grid-area: portfolio;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#map {
+    grid-area: map;
+    height: 70vh;
+}
+
+#footer {
+    grid-area: footer;
+    padding: 5px;
+    background-color: #4677a0;
+    color: #fff;
+    text-align: center;
+}
+
+#contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
