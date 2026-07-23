@@ -16,7 +16,7 @@ function addMarker(feature){
     let popup_message;
     if (feature['Recommend']== 'Yes! I had a great time.')
     {
-        popup_message = '<h2>Positive</h2> <h3> Location: ${where}</h3>'
+        popup_message = `<h2>Positive</h2> <h3> Location: ${where}</h3>` // back-tick or "<h2>"+where+"</h2>"
         new maplibregl.Marker({color: "darkolivegreen"})
         .setLngLat([longitude, latitude])
         .setPopup(new maplibregl.Popup()
@@ -24,7 +24,7 @@ function addMarker(feature){
         .addTo(map)
     }
     else {
-        popup_message = '<h2> Negative </h2> <h3> Location: ${where}</h3>'
+        popup_message = `<h2> Negative </h2> <h3> Location: ${where}</h3>`
         new maplibregl.Marker({color: "firebrick"})
         .setLngLat([longitude, latitude])
         .setPopup(new maplibregl.Popup()

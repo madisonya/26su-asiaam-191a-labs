@@ -37,7 +37,12 @@ header {
     text-align: center;
     padding-top: 2rem;
     padding-bottom:2.5rem;
-    color: black;
+    color: white;
+}
+
+header img{
+    height:15vh;
+    padding-top: 1.5rem;
 }
 
 .portfolio {
@@ -46,6 +51,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-right:20px;
 }
 
 #map {
@@ -66,4 +72,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
