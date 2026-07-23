@@ -12,9 +12,9 @@ function addMarker(feature){
     console.log("in addMarker function")
     let longitude = feature.lng;
     let latitude = feature.lat;
-    let where= feature.Located;
+    let where= feature.Location;
     let popup_message;
-    if (feature['Recommend']== 'Yes! I had a great time.')
+    if (feature['Would you recommend this travel destination to others?']== 'Yes! I had a great time.')
     {
         popup_message = `<h2>Positive</h2> <h3> Location: ${where}</h3>` // back-tick or "<h2>"+where+"</h2>"
         new maplibregl.Marker({color: "darkolivegreen"})
